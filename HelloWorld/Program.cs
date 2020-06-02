@@ -11,10 +11,13 @@ namespace HelloWorld
     /// </summary>
     class Program
     {
+        public string Name { get; set; } = "Jamie Forde";
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
             Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
