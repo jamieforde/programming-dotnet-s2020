@@ -10,6 +10,12 @@ namespace LabExercise2_Part1
     {
         static void Main(string[] args)
         {
+            Car[] cars = new Car[] {
+                new Car { Fuel = 40, Make = "Honda", Mileage = 550, Model = "Civic" },
+                new Car { Make = "Ford", Model = "Mustang", Fuel = 45, Mileage = 432},
+
+            };
+
         }
     }
 }

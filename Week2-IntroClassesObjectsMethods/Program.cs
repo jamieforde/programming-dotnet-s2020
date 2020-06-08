@@ -50,7 +50,6 @@ namespace Week2_Intro
         {
             x = x * x;
         }
-
         //static void 
 
         static int Power(int baseValue, int exponentValue = 2)
