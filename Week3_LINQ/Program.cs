@@ -25,7 +25,6 @@ namespace Week3_LINQ
             }
 
             //Reference Types
-
             var employees = new[]
 {
                 new Employee("Jason", "Red", 5000M),
@@ -85,9 +84,6 @@ namespace Week3_LINQ
 
             Console.WriteLine("\nDemonstrating Anonymous Types");
             Console.WriteLine($"\t{anon.First().GetType()}");
-
-
-
             Console.ReadKey();
         }
     }

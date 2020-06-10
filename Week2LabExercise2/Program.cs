@@ -99,7 +99,7 @@ namespace LabExercise2_Part1_Fields
         /// <summary>
         /// Displays car with best fuel efficiency
         /// </summary>
-        /// <param name="cars"></param>
+        /// <param name="cars">A collection of cars</param>
         public static void DisplayCarBestMileage(Car[] cars)
         {
             
