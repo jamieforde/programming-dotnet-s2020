@@ -16,10 +16,13 @@ namespace Week3_LINQ
             FirstName = firstName;
             LastName = lastName;
             this.monthlySalary = monthlySalary;
+            lastNameField = lastName;
         }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         private decimal monthlySalary { get; set; }
+
+        private string lastNameField;
 
         public decimal MonthlySalary
         {
@@ -35,6 +38,17 @@ namespace Week3_LINQ
                 }
             }
         }
+
+        public void SetLastNameField(string name)
+        {
+            lastNameField = name;
+        }
+
+        public string GetLastNameField()
+        {
+            return lastNameField;
+        }
+
 
         public override string ToString() =>
             $"{FirstName,-10} {LastName,-10} {MonthlySalary,10:C}";

@@ -14,36 +14,25 @@
  * the License.
  * 
  * User: Jamie Forde
- * Date: 2020-06-08
+ * Date: 2020-06-12
  */
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
-using System.Net;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
-namespace LabExercise02_Part1
+namespace LabExercise03_Part1
 {
     class Program
     {
-        /// <summary>
-        /// Represents the staring point of the program
-        /// </summary>
-        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            // Initialize an array of cars
-            Car[] cars =
-            {
-                new Car("Honda", "Civic", 40, 550),
-                new Car("Ford", "Mustang", 45, 432),
-                new Car("VW", "Golf", 34, 667),
-                new Car("Ford", "Focus", 39, 600),
-                new Car("Chevrolet", "Cruz", 40, 525)
-            };
+            Car[] cars = Read(@"..\..\Cars.csv");
 
             int userChoice = 0;
 
@@ -52,7 +41,7 @@ namespace LabExercise02_Part1
             {
                 Console.Clear();
                 DisplayMenu();
-                
+
                 var validChoice = int.TryParse(Console.ReadLine(), out userChoice);
 
                 if (validChoice)
@@ -101,15 +90,15 @@ namespace LabExercise02_Part1
         /// <param name="cars">A collection of cars</param>
         public static void DisplayCarBestMileage(Car[] cars)
         {
-            
+
             double bestFuelEfficiency = cars[0].CalculateFuelEfficiency();
             Car carWithBestFuelefficiency = cars[0];
- 
-            foreach (var car in cars) 
-            {             
+
+            foreach (var car in cars)
+            {
                 var fuelEfficiency = car.CalculateFuelEfficiency();
 
-                if (fuelEfficiency.CompareTo(bestFuelEfficiency) < 0) 
+                if (fuelEfficiency.CompareTo(bestFuelEfficiency) < 0)
                 {
                     bestFuelEfficiency = fuelEfficiency;
                     carWithBestFuelefficiency = car;
@@ -117,7 +106,7 @@ namespace LabExercise02_Part1
             }
 
             Console.WriteLine("The car with the best fuel efficiency:");
-            Console.WriteLine($"\t{carWithBestFuelefficiency}");              
+            Console.WriteLine($"\t{carWithBestFuelefficiency}");
         }
 
         /// <summary>
@@ -126,7 +115,7 @@ namespace LabExercise02_Part1
         /// <param name="cars">An array of cars</param>
         public static void DisplayFordCars(Car[] cars)
         {
-            foreach(var car in cars)
+            foreach (var car in cars)
             {
                 if (car.GetMake().ToLower() == "ford")
                 {
@@ -164,5 +153,38 @@ namespace LabExercise02_Part1
             }
         }
 
+        /// <summary>
+        /// Method to read a file of cars.
+        /// </summary>
+        /// <param name="fileName">Represents a file that contains a data file of cars</param>
+        /// <returns></returns>
+        public static Car[] Read(string fileName)
+        {
+            Car[] cars = new Car[6];
+            try
+            {
+                StreamReader reader = new StreamReader(fileName);
+                int counter = 0;
+
+                while (!reader.EndOfStream)
+                {
+                    string line = reader.ReadLine();
+                    string[] split = line.Split(',');
+
+                    for (var i = 0; i < split.Length - 1; i++)
+                    {
+                        Car newCar = new Car(split[0], split[1], int.Parse(split[2]), int.Parse(split[3]));
+                        cars[counter] = newCar;
+                    }
+                    counter++;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Could not read in file!");
+            }
+
+            return cars;
+        }
     }
 }

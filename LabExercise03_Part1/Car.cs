@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LabExercise02_Part1
+namespace LabExercise03_Part1
 {
     /// <summary>
     /// Represents a car
@@ -56,6 +57,9 @@ namespace LabExercise02_Part1
         /// </summary>
         /// <returns>A formatted string for a car</returns>
         public override string ToString() => $"{make},{model} Used={fuel} Mileage={mileage} " +
-            $"Fuel Efficiency={CalculateFuelEfficiency():F2}";       
+            $"Fuel Efficiency={CalculateFuelEfficiency():F2}";  
+        
+
+
     }
 }

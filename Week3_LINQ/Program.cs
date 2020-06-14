@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week3_LINQ
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -19,7 +20,7 @@ namespace Week3_LINQ
                 where value > 4
                 select value;
 
-            foreach(var value in filter)
+            foreach (var value in filter)
             {
                 Console.WriteLine(value);
             }
@@ -63,7 +64,8 @@ namespace Week3_LINQ
             if (nameSorted.Any())
             {
                 Console.WriteLine($"\t{nameSorted.First()}");
-            } else
+            }
+            else
             {
                 Console.WriteLine("Not Found");
             }
@@ -73,7 +75,7 @@ namespace Week3_LINQ
                 select employee.LastName;
 
             Console.WriteLine("\nUnique Last Names");
-            foreach(var name in lastNames.Distinct())
+            foreach (var name in lastNames.Distinct())
             {
                 Console.WriteLine($"\t{name}");
             }
@@ -84,6 +86,7 @@ namespace Week3_LINQ
 
             Console.WriteLine("\nDemonstrating Anonymous Types");
             Console.WriteLine($"\t{anon.First().GetType()}");
+
             Console.ReadKey();
         }
     }
