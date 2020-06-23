@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week4_Inheritance", "Week4_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week4_ClassesAndObjectsDeeperLook", "Week4_ClassesAndObjectsDeeperLook\Week4_ClassesAndObjectsDeeperLook.csproj", "{35DEE6E7-4578-4C4F-ADF9-82EFF7476D34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week4_StructsAndOperatorOverloading", "Week4_StructsAndOperatorOverloading\Week4_StructsAndOperatorOverloading.csproj", "{E0877EDB-9F57-4614-AE05-F582FC8DC28B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5_Polymorphism", "Week5_Polymorphism\Week5_Polymorphism.csproj", "{D4A3FD23-7375-4A58-A93C-54A5AC7F9A0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{35DEE6E7-4578-4C4F-ADF9-82EFF7476D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35DEE6E7-4578-4C4F-ADF9-82EFF7476D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35DEE6E7-4578-4C4F-ADF9-82EFF7476D34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0877EDB-9F57-4614-AE05-F582FC8DC28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0877EDB-9F57-4614-AE05-F582FC8DC28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0877EDB-9F57-4614-AE05-F582FC8DC28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0877EDB-9F57-4614-AE05-F582FC8DC28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A3FD23-7375-4A58-A93C-54A5AC7F9A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A3FD23-7375-4A58-A93C-54A5AC7F9A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A3FD23-7375-4A58-A93C-54A5AC7F9A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A3FD23-7375-4A58-A93C-54A5AC7F9A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
