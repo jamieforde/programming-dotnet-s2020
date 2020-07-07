@@ -36,7 +36,7 @@ namespace Week2_FileIO
                 // Provides a stream for a file
                 // Investigate the FileMode and FileAccess enums
                 // Note exceptions that can be thrown
-                FileStream file = new FileStream("test.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                FileStream file = new FileStream("test3.txt", FileMode.Open, FileAccess.Read);
                 
                 // Used for writing characters to a stream
                 StreamWriter data = new StreamWriter(file);
