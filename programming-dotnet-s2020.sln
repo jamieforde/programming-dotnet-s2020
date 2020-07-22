@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5_ReleasingResources", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5_ExceptionProperties", "Week5_ExceptionProperties\Week5_ExceptionProperties.csproj", "{8781909A-4B6B-4DFA-B4FD-CA5897133D98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week9_Delegates", "Week9_Delegates\Week9_Delegates.csproj", "{2E483B7B-631E-453A-8FA2-578923D3E0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week9_Events", "Week9_Events\Week9_Events.csproj", "{0F9D2A2D-C7A2-45D6-96F9-B3FEBF47D671}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{8781909A-4B6B-4DFA-B4FD-CA5897133D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8781909A-4B6B-4DFA-B4FD-CA5897133D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8781909A-4B6B-4DFA-B4FD-CA5897133D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E483B7B-631E-453A-8FA2-578923D3E0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E483B7B-631E-453A-8FA2-578923D3E0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E483B7B-631E-453A-8FA2-578923D3E0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E483B7B-631E-453A-8FA2-578923D3E0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9D2A2D-C7A2-45D6-96F9-B3FEBF47D671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9D2A2D-C7A2-45D6-96F9-B3FEBF47D671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9D2A2D-C7A2-45D6-96F9-B3FEBF47D671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9D2A2D-C7A2-45D6-96F9-B3FEBF47D671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

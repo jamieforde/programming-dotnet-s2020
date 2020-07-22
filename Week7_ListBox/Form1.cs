@@ -53,7 +53,7 @@ namespace Week7_ListBox
         {
             if (displayListBox.SelectedIndex != -1)
             {
-                displayListBox.Items.RemoveAt(displayListBox.SelectedIndex);
+                displayListBox.Items.Remove(displayListBox.SelectedIndex);
             }
         }
 
